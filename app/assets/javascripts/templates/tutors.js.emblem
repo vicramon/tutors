@@ -1,0 +1,9 @@
+h1 Tutors List
+
+label Subject
+view 'subjectSelect' content=subjects
+
+ul
+  each tutor in filteredTutors
+    li= tutor.fullName
+
