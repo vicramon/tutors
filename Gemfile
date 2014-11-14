@@ -17,10 +17,16 @@ end
 
 group :development, :test do
   gem 'pry-rails'
+  gem 'ffaker'
 end
 
 group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
